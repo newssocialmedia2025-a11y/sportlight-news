@@ -4,13 +4,14 @@ import { Search, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const categories = [
-  { name: "Sports", path: "/sports" },
-  { name: "Education", path: "/education" },
-  { name: "Politics", path: "/politics" },
-  { name: "India", path: "/india" },
-  { name: "Foreign", path: "/foreign" },
-  { name: "Health", path: "/health" },
-  { name: "Tech", path: "/tech" },
+  { name: "All News", path: "/news" },
+  { name: "Sports", path: "/news/sports" },
+  { name: "Education", path: "/news/education" },
+  { name: "Politics", path: "/news/politics" },
+  { name: "India", path: "/news/india" },
+  { name: "Foreign", path: "/news/foreign" },
+  { name: "Health", path: "/news/health" },
+  { name: "Tech", path: "/news/tech" },
 ];
 
 export const Navigation = () => {

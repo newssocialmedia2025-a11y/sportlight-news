@@ -3,8 +3,11 @@ import { NewsCard } from "@/components/NewsCard";
 import { LiveMatches } from "@/components/LiveMatches";
 import { TrendingNews } from "@/components/TrendingNews";
 import { mockNewsData } from "@/data/mockNews";
+import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+import { Plus } from "lucide-react";
 
-const Index = () => {
+const NewsFeed = () => {
   const heroPost = mockNewsData[0];
   const featuredPosts = mockNewsData.slice(1, 4);
   const recentPosts = mockNewsData.slice(4, 8);
@@ -12,6 +15,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      
+      {/* Create Post Button - Fixed Position */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <Button asChild size="lg" className="rounded-full shadow-lg">
+          <Link to="/create-post">
+            <Plus className="h-5 w-5 mr-2" />
+            Create Post
+          </Link>
+        </Button>
+      </div>
       
       <main className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -74,4 +87,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default NewsFeed;
