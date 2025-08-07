@@ -40,8 +40,8 @@ const SignIn = () => {
           description: "You have successfully signed in.",
         });
 
-        // Redirect to home page
-        navigate("/");
+        // Redirect to news page
+        navigate("/news");
       }
     } catch (error) {
       toast({
