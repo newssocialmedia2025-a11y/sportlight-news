@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// News specific colors
+				hero: {
+					DEFAULT: 'hsl(var(--hero-bg))',
+					foreground: 'hsl(var(--hero-foreground))'
+				},
+				live: 'hsl(var(--live-indicator))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

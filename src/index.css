@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 230 35% 7%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -26,17 +26,34 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 64 85% 55%;
+    --accent-foreground: 230 35% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 64 85% 55%;
 
     --radius: 0.5rem;
+
+    /* News specific colors */
+    --hero-bg: 230 35% 7%;
+    --hero-foreground: 210 40% 98%;
+    --live-indicator: 0 84% 60%;
+    --category-hover: 64 85% 55%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(230 35% 7%), hsl(230 45% 15%));
+    --gradient-accent: linear-gradient(90deg, hsl(64 85% 55%), hsl(64 85% 45%));
+
+    /* Shadows */
+    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.1);
+    --shadow-hero: 0 8px 32px hsl(0 0% 0% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
